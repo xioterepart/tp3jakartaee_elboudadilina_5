@@ -7,7 +7,7 @@ import dev.langchain4j.model.chat.ChatLanguageModel;
 
 public class LlmClientForGuideTouristique {
     private static final String API_KEY =
-            System.getenv("GEMINI_API_KEY"); // clé API dans variable d’environnement
+            System.getenv("GEMINI-API-KEY"); // clé API dans variable d’environnement
     private final GuideTouristique guideTouristique;
     public LlmClientForGuideTouristique() {
         var model = GoogleAiGeminiChatModel.builder()
