@@ -18,7 +18,11 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="34wL7U4VOZNKGJybqw3rnM7GUtI" />
-  <component name="PropertiesComponent">{}</component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
   <component name="TaskManager">
     <servers />
   </component>
