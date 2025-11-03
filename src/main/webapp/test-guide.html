@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test Guide Touristique</title>
+</head>
+<body>
+<h1>Test Guide Touristique</h1>
+<input id="lieu" placeholder="Entrez une ville ou un pays">
+<input id="nombre" type="number" value="3" min="1" placeholder="Nombre de lieux à visiter (ex: 3)">
+<button onclick="getInfos()">Chercher</button>
+<pre id="resultat"></pre>
+<script>
+    async function getInfos() {
+        // 1. Get the value of the 'lieu' input
+        const lieu = document.getElementById('lieu').value;
+
+        // 2. Get the value of the new 'nombre' input
+        let nombre = document.getElementById('nombre').value;
+
+        // Safety check: use a default value (e.g., 2) if the input is empty
+        if (!nombre || nombre < 1) {
+            nombre = 2;
+        }
+
+        // 3. Construct the URL using the 'nombre' variable
+        const response = await fetch(`http://localhost:8080/tp3jakartaee-1.0-SNAPSHOT/api/guide/lieu/${lieu}/${nombre}`);
+
+        const data = await response.text();
+        document.getElementById('resultat').innerText = data;
+    }
+</script>
+</body>
+</html>

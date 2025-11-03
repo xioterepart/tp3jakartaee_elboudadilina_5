@@ -2,13 +2,22 @@ package ma.emsi.elboudadi.tp3jakartaee.llm;
 
 import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;
-import dev.langchain4j.model.googleai.GoogleAiGeminiChatModel;
+import dev.langchain4j.service.V;
 
 public interface GuideTouristique {
-    @SystemMessage("Tu es un guide touristique. Donne les 2 principaux endroits à visiter dans le lieu demandé, " +
-            "et le prix moyen d’un repas. Réponds au format JSON EXACT suivant, sans utiliser Markdown :" +
-            " { \"ville_ou_pays\":\"nom du lieu\", \"endroits_a_visiter\": [\"endroit1\", \"endroit2\"], \"prix_moyen_repas\": \"<prix> <devise>\" }")
 
-        @UserMessage("Lieu : {lieu}")
-        String getInfosTouristiques(String lieu);
-    }
+    @SystemMessage("""
+        Tu es un guide touristique.
+        Donne les {{nombre}} principaux endroits à visiter dans la ville ou le pays demandé,
+        ainsi que le prix moyen d'un repas dans la devise locale.
+        Répond uniquement en JSON, au format exact :
+        {
+          "ville_ou_pays": "<nom de la ville ou du pays>",
+          "endroits_a_visiter": ["endroit 1", "endroit 2", ...],
+          "prix_moyen_repas": "<prix> <devise>"
+        }
+        N'utilise pas Markdown.
+    """)
+    @UserMessage("{{lieu}} : donne moi {{nombre}} endroits.") // 👈 Change this line
+    String ask(@V("lieu") String lieu, @V("nombre") int nombre);
+}

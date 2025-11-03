@@ -10,7 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77036142-a2f2-4654-ab1d-2392720a2f1e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/elboudadi/tp3jakartaee/filters/CorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/test-guide.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/emsi/elboudadi/tp3jakartaee/llm/GuideTouristique.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/elboudadi/tp3jakartaee/llm/GuideTouristique.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ma/emsi/elboudadi/tp3jakartaee/llm/LlmClientForGuideTouristique.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/elboudadi/tp3jakartaee/llm/LlmClientForGuideTouristique.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ma/emsi/elboudadi/tp3jakartaee/resources/GuideTouristiquResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/elboudadi/tp3jakartaee/resources/GuideTouristiquResource.java" afterDir="false" />
     </list>
@@ -22,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -51,23 +57,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Payara Server.Payara 6.2025.10.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Payara Server.Payara 6.2025.10.executor": "Run",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/hp/IdeaProjects/tp3jakartaee/src/main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\IdeaProjects\tp3jakartaee\src\main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\IdeaProjects\tp3jakartaee\src\main\webapp" />
+      <recent name="C:\Users\hp\IdeaProjects\tp3jakartaee\src\main\resources" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Payara 6.2025.10" type="PayaraServerConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Payara 6.2025.10" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
@@ -159,7 +177,7 @@
       <option name="presentableId" value="Default" />
       <updated>1762123372025</updated>
       <workItem from="1762123384538" duration="4188000" />
-      <workItem from="1762158313771" duration="1712000" />
+      <workItem from="1762158313771" duration="7081000" />
     </task>
     <servers />
   </component>
