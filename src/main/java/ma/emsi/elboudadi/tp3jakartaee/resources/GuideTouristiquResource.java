@@ -13,9 +13,10 @@ public class GuideTouristiquResource {
     private final LlmClientForGuideTouristique llmClient = new
             LlmClientForGuideTouristique();
     @GET
-    @Path("lieu/{ville_ou_pays}")
+    @Path("lieu/{ville_ou_pays}/{nb}")
     @Produces(MediaType.APPLICATION_JSON)
-    public String getInfos(@PathParam("ville_ou_pays") String lieu) {
-        return llmClient.getInfos(lieu);
+    public String getInfos(@PathParam("ville_ou_pays") String lieu,
+                           @PathParam("nb") int nb) {
+        return llmClient.getInfosAvecNombre(lieu, nb);
     }
 }
