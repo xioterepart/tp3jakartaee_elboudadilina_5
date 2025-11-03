@@ -7,6 +7,7 @@ import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
+
 @Path("/guide")
 public class GuideTouristiquResource {
     private final LlmClientForGuideTouristique llmClient = new
